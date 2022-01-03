@@ -1,0 +1,17 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  height: $base-size * 4;
+  padding-left: $base-size;
+}
+
+.link {
+  font-size: $base-size * 2;
+  margin-right: $base-size;
+  color: $color-text;
+  transition: $transition;
+
+  &:hover {
+    color: $color-light;
+  }
+}

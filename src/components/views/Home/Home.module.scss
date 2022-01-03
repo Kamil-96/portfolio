@@ -1,0 +1,63 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  min-height: calc(100vh - 48px);
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+}
+
+.icon {
+  color: $color-light;
+}
+
+.firstHeading, .secondHeading {
+  font-size: 5vw;
+}
+
+.firstHeading, .secondHeading, .button {
+  animation-name: animation;
+}
+
+.firstHeading {
+  animation-duration: 3s;
+}
+
+.secondHeading {
+  animation-duration: 5s;
+}
+
+.button {
+  background: linear-gradient(90deg, rgba(43,104,149,1) 0%, rgba(38,77,164,1) 35%, rgba(0,87,166,1) 100%);
+  border: none;
+  padding: 15px;
+  border-radius: $base-size * 2;
+  color: $color-text;
+  font-size: $base-size * 1.7;
+  cursor: pointer;
+  margin-top: $base-size * 3;
+  transition: $transition;
+  animation-duration: 7s;
+
+  &:hover {
+    color: $color-light;
+  }
+}
+
+@keyframes animation {
+
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
