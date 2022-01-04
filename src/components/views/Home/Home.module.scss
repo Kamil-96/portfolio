@@ -1,6 +1,7 @@
 @import '../../../styles/settings.scss';
 
 .component {
+  @extend %container;
   min-height: calc(100vh - 48px);
   position: relative;
 }
@@ -11,7 +12,7 @@
   width: 100%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -85%);
+  transform: translate(-50%, -60%);
 }
 
 .icon {
@@ -19,7 +20,7 @@
 }
 
 .firstHeading, .secondHeading {
-  font-size: 5vw;
+  font-size: $base-size * 6;
 }
 
 .firstHeading, .secondHeading, .button {
@@ -35,15 +36,9 @@
 }
 
 .button {
-  background: linear-gradient(90deg, rgba(43,104,149,1) 0%, rgba(38,77,164,1) 35%, rgba(0,87,166,1) 100%);
-  border: none;
-  padding: 15px;
-  border-radius: $base-size * 2;
-  color: $color-text;
-  font-size: $base-size * 1.7;
-  cursor: pointer;
+  @extend %button-styles;
   margin-top: $base-size * 3;
-  transition: $transition;
+  color: $color-text;
   animation-duration: 7s;
 
   &:hover {
@@ -59,5 +54,27 @@
 
   100% {
     opacity: 1
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1023px) {
+
+  .content {
+    transform: translate(-50%, -50%);
+  }
+
+  .firstHeading, .secondHeading {
+    font-size: $base-size * 5;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .content {
+    transform: translate(-50%, -50%);
+  }
+
+  .firstHeading, .secondHeading {
+    font-size: $base-size * 3;
   }
 }

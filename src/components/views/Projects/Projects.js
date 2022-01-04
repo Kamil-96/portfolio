@@ -7,8 +7,8 @@ import ProjectItem from '../../features/ProjectItem/ProjectItem';
 import projects from '../../../data/data';
 
 const Projects = () => (
-  <div>
-    <ul>
+  <div className={styles.component}>
+    <ul className={styles.list}>
       {projects.map(project => (
         <ProjectItem key={ project.id } { ...project } />
       ))}

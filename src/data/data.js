@@ -6,6 +6,7 @@ const projects = [
     githubLink: 'https://github.com/Kamil-96/e-commerce',
     herokuLink: 'https://fast-lowlands-80053.herokuapp.com',
     technologies: 'JavaScript, React, Redux, React-Router, Sass, Redux-Thunk, Axios, Node.js, Express, MongoDB Atlas, Mongoose',
+    image: '/images/image_ecommerce.png',
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const projects = [
     githubLink: 'https://github.com/Kamil-96/rest-api-app',
     herokuLink: 'https://stormy-bayou-07450.herokuapp.com',
     technologies: 'JavaScript, React, Redux, React-Router, Sass, Redux-Thunk, Axios, Node.js, Express, MongoDB Atlas, Mongoose, Mocha, Chai',
+    image: '/images/image_festival.png',
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ const projects = [
     githubLink: 'https://github.com/Kamil-96/travel-agency',
     herokuLink: 'https://intense-lowlands-09045.herokuapp.com',
     technologies: 'JavaScript, React, Redux, React-Router, Sass, Jest, Enzyme',
+    image: '/images/image_agency.png',
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ const projects = [
     githubLink: 'https://github.com/Kamil-96/project-pizzeria',
     herokuLink: 'https://fast-retreat-54260.herokuapp.com',
     technologies: 'HTML5, Sass, JavaScript',
+    image: '/images/image_pizzeria.png',
   },
 ];
 

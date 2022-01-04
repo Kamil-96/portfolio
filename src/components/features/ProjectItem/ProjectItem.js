@@ -3,13 +3,16 @@ import PropTypes from 'prop-types';
 
 import styles from './ProjectItem.module.scss';
 
-const ProjectItem = ({ name, description, githubLink, herokuLink, technologies }) => (
-  <li>
-    <div>
-      <a href={githubLink} alt='github link'>Github</a>
-      <a href={herokuLink} alt='heroku link'>Heroku</a>
+const ProjectItem = ({ name, description, githubLink, herokuLink, technologies, image }) => (
+  <li className={styles.component}>
+    <div className={styles.imgContainer}>
+      <img className={styles.image} src={image} alt='Project' />
+      <div className={styles.btnContainer}>
+        <button><a href={githubLink} target="_blank" rel="noreferrer">Github</a></button>
+        <button><a href={herokuLink} target="_blank" rel="noreferrer">Heroku</a></button>
+      </div>
     </div>
-    <div>
+    <div className={styles.descriptionContainer}>
       <div>
         <h3>Description</h3>
         <p>{description}</p>
@@ -28,6 +31,7 @@ ProjectItem.propTypes = {
   githubLink: PropTypes.string,
   herokuLink: PropTypes.string,
   technologies: PropTypes.string,
+  image: PropTypes.string,
 };
 
 export default ProjectItem;

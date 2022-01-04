@@ -1,1 +1,54 @@
 @import '../../../styles/settings.scss';
+
+.component {
+  display: flex;
+  margin-bottom: $base-size * 2;
+  padding: ($base-size * 3) 0;
+}
+
+.imgContainer {
+  flex: 1;
+  padding-right: $base-size;
+}
+
+.image {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: $base-size;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: $base-size;
+
+  button {
+    @extend %button-styles;
+
+    a {
+      color: $color-text;
+      transition: $transition;
+
+      &:hover {
+        color: $color-light;
+      }
+    }
+  }
+}
+
+.descriptionContainer {
+  flex: 3;
+}
+
+@media (max-width: 767px) {
+
+  .component {
+    flex-direction: column;
+    border-bottom: 1px solid $color-light;
+  }
+
+  .imgContainer {
+    margin-bottom: $base-size * 1.5;
+  }
+}

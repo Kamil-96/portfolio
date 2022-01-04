@@ -1,8 +1,8 @@
 @import '../../../styles/settings.scss';
 
 .component {
+  @extend %container;
   height: $base-size * 4;
-  padding-left: $base-size;
 }
 
 .link {
