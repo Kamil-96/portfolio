@@ -8,8 +8,8 @@ const ProjectItem = ({ name, description, githubLink, herokuLink, technologies, 
     <div className={styles.imgContainer}>
       <img className={styles.image} src={image} alt='Project' />
       <div className={styles.btnContainer}>
-        <button><a href={githubLink} target="_blank" rel="noreferrer">Github</a></button>
-        <button><a href={herokuLink} target="_blank" rel="noreferrer">Heroku</a></button>
+        <a href={githubLink} target="_blank" rel="noreferrer"><button>Github</button></a>
+        <a href={herokuLink} target="_blank" rel="noreferrer"><button>Heroku</button></a>
       </div>
     </div>
     <div className={styles.descriptionContainer}>

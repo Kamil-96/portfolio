@@ -38,12 +38,7 @@
 .button {
   @extend %button-styles;
   margin-top: $base-size * 3;
-  color: $color-text;
   animation-duration: 7s;
-
-  &:hover {
-    color: $color-light;
-  }
 }
 
 @keyframes animation {

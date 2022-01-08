@@ -25,15 +25,6 @@
 
   button {
     @extend %button-styles;
-
-    a {
-      color: $color-text;
-      transition: $transition;
-
-      &:hover {
-        color: $color-light;
-      }
-    }
   }
 }
 

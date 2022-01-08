@@ -17,6 +17,11 @@ $transition: all 1s;
   font-size: $base-size * 1.7;
   cursor: pointer;
   transition: $transition;
+  color: $color-text;
+
+  &:hover {
+    color: $color-light;
+  }
 }
 
 %container {
